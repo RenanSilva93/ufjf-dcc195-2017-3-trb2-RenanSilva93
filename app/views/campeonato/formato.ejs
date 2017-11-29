@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Início do Campeonato</title>
+    <link rel="stylesheet" href="css/css.css">
+  </head>
+  <body>
+	<center>
+	<h3>Campeonato de Computação</h3>
+	<form name="" action="" method="POST">
+		<% for(var i in equipes){
+                var jogo = equipes[i];
+				
+        %>
+        Jogo <%=i%>: <%=jogo.timeMandante%> x <%=jogo.timeVisitante%> <br><br>
+			<input type="hidden" name="time" value="<%=jogo.timeMandante%>"/>
+			<input type="hidden" name="time" value="<%=jogo.timeVisitante%>"/>
+        <%}%>
+		
+			<input type="hidden" name="quantidade" value="<%=i%>"/>
+		
+		
+		<input type="submit" value="Enviar" />
+		</form>
+		
+		<a href="http://localhost:3000">HOME</a>
+	  </center>
+  </body>
+</html>
