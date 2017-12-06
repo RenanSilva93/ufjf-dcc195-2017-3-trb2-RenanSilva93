@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Início do Campeonato</title>
+    <link rel="stylesheet" href="css/css.css">
+  </head>
+  <body>
+	<center>
+	<h3>Campeonato de Computação</h3>
+	<form name="" action="" method="POST">
+	<table>
+	<tr>
+		<th>OITAVAS</th>
+		<th>QUARTAS</th>
+		<th>SEMI</th>
+		<th>FINAL</th>
+		<th>CAMPEÃO</th>
+	</tr>
+	<tr>
+	<% if(fase == 4 || fase == 2 || fase == 1 || fase == 0) {%>
+		<td>
+			<% for(var i in equipesOitavas){
+                var jogo = equipesOitavas[i]; %>
+				<input type="hidden" name="timesOitavasAntigo" value="<%=jogo.timeMandante%>"/>
+				<input type="hidden" name="timesOitavasAntigo" value="<%=jogo.timeVisitante%>"/>
+        
+        Jogo: <%=jogo.timeMandante%> x <%=jogo.timeVisitante%> <br><br>
+        <%}%>
+		</td>
+	<% } %>
+	
+	<% if(fase == 2 || fase == 1 || fase == 0) {%>
+		<td>
+			<% for(var i in equipesQuartas){
+                var jogo = equipesQuartas[i]; %>
+				<input type="hidden" name="timesQuartasAntigo" value="<%=jogo.timeMandante%>"/>
+				<input type="hidden" name="timesQuartasAntigo" value="<%=jogo.timeVisitante%>"/>
+        
+        Jogo: <%=jogo.timeMandante%> x <%=jogo.timeVisitante%> <br><br>
+        <%}%>
+		</td>
+	<% } %>
+	
+	<% if(fase == 1 || fase == 0) {%>
+		<td>
+			<% for(var i in equipesSemi){
+                var jogo = equipesSemi[i]; %>
+				<input type="hidden" name="timesSemiAntigo" value="<%=jogo.timeMandante%>"/>
+				<input type="hidden" name="timesSemiAntigo" value="<%=jogo.timeVisitante%>"/>
+        
+        Jogo: <%=jogo.timeMandante%> x <%=jogo.timeVisitante%> <br><br>
+        <%}%>
+		</td>
+	<% } %>
+	
+	<% if(fase == 0) {%>
+		<td>
+			<% for(var i in equipesFinal){
+                var jogo = equipesFinal[i]; %>
+				<input type="hidden" name="timesFinalAntigo" value="<%=jogo.timeMandante%>"/>
+				<input type="hidden" name="timesFinalAntigo" value="<%=jogo.timeVisitante%>"/>
+        
+        Jogo: <%=jogo.timeMandante%> x <%=jogo.timeVisitante%> <br><br>
+        <%}%>
+		</td>
+	<% } %>
+	<% if(fase != 0) { %>
+	<td>
+		<% for(var i in equipes){
+                var jogo = equipes[i]; %>
+				<input type="hidden" name="timeAntigo" value="<%=jogo.timeMandante%>"/>
+				<input type="hidden" name="timeAntigo" value="<%=jogo.timeVisitante%>"/>
+        
+        Jogo: <%=jogo.timeMandante%> x <%=jogo.timeVisitante%> <br><br>
+			<input type="hidden" name="time" value="<%=jogo.timeMandante%>"/>
+			<input type="hidden" name="time" value="<%=jogo.timeVisitante%>"/>
+        <%}%>
+	</td>
+	<% } %>
+	
+	<% if(fase == 0) {%>
+		<td>
+			<img  src="trofeu.png"> <br>
+			CAMPEÃO: <%=equipesCampeao[0].campeao%> <br> <br>
+		</td>
+	<% } %>
+		
+	</tr>
+	</table>
+		
+			<input type="hidden" name="quantidade" value="<%=i%>"/>
+		
+		<% if(fase != 0) { %>
+		<input type="submit" value="Enviar" />
+		<% } %>
+		</form>
+		
+		<a href="/index.html">HOME</a>
+	  </center>
+  </body>
+</html>

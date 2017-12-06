@@ -3,6 +3,8 @@ module.exports.principal = function(req,res,next){
     {rota:"HOME/",link :"/"},
     {rota:"index.html",link :"/index.html"},
     {rota:"Sobre",link :"/sobre.html"},
-	{rota:"Usuario",link :"/usuario.html"},
+    {rota:"Amigo Oculto",link :"/amigo_oculto.html"},
+	{rota:"Jogo da Velha",link :"/jogo_velha.html"},
+	{rota:"Campeonato",link :"/campeonato.html"},
   ]})
 }

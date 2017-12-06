@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="css/css.css">
+  </head>
+  <body>
+	<center>
+	<h3>Clique nos botões de jogar para brincar no jogo da velha.</h3>
+	  
+	  <table>
+		<tr>		
+			<td><div id=quadrado>
+				<% if(casas[0] != 0) { %>
+					<label><%=casas[0]%></label>
+				<% } else { %>
+					<form name="" action="" method="POST">
+						<input type="hidden" name="posicao" value="0"/>
+						<%
+						for(var i in casas){
+							  var c = casas[i];%>
+							  <input type="hidden" name="casas" value="<%=c%>">
+							<%}%>
+						<% var cont = parseInt(contador) + 1;%>
+						<input type="hidden" name="contador" value="<%=cont%>" />
+						<input type="submit" value="Jogar" />
+					</form>
+				<% } %>
+			</div></td>
+			<td><div id=quadrado>
+				<% if(casas[1] != 0) { %>
+					<label><%=casas[1]%></label>
+				<% } else { %>
+					<form name="" action="" method="POST">
+						<input type="hidden" name="posicao" value="1"/>
+						<%
+						for(var i in casas){
+							  var c = casas[i];%>
+							  <input type="hidden" name="casas" value="<%=c%>">
+							<%}%>
+							<% var cont = parseInt(contador) + 1;%>
+						<input type="hidden" name="contador" value="<%=cont%>" />
+						<input type="submit" value="Jogar" />
+					</form>
+				<% } %>
+			</div></td>
+			<td><div id=quadrado>
+				<% if(casas[2] != 0) { %>
+					<label><%=casas[2]%></label>
+				<% } else { %>
+					<form name="" action="" method="POST">
+						<input type="hidden" name="posicao" value="2"/>
+						<%
+						for(var i in casas){
+							  var c = casas[i];%>
+							  <input type="hidden" name="casas" value="<%=c%>">
+							<%}%>
+							<% var cont = parseInt(contador) + 1;%>
+						<input type="hidden" name="contador" value="<%=cont%>" />
+						<input type="submit" value="Jogar" />
+					</form>
+				<% } %>
+			</div></td>
+		</tr>
+		<tr>		
+			<td><div id=quadrado>
+				<% if(casas[3] != 0) { %>
+					<label><%=casas[3]%></label>
+				<% } else { %>
+					<form name="" action="" method="POST">
+						<input type="hidden" name="posicao" value="3"/>
+						<%
+						for(var i in casas){
+							  var c = casas[i];%>
+							  <input type="hidden" name="casas" value="<%=c%>">
+							<%}%>
+							<% var cont = parseInt(contador) + 1;%>
+						<input type="hidden" name="contador" value="<%=cont%>" />
+						<input type="submit" value="Jogar" />
+					</form>
+				<% } %>
+			</div></td>
+			<td><div id=quadrado>
+				<% if(casas[4] != 0) { %>
+					<label><%=casas[4]%></label>
+				<% } else { %>
+					<form name="" action="" method="POST">
+						<input type="hidden" name="posicao" value="4"/>
+						<%
+						for(var i in casas){
+							  var c = casas[i];%>
+							  <input type="hidden" name="casas" value="<%=c%>">
+							<%}%>
+							<% var cont = parseInt(contador) + 1;%>
+						<input type="hidden" name="contador" value="<%=cont%>" />
+						<input type="submit" value="Jogar" />
+					</form>
+				<% } %>
+			</div></td>
+			<td><div id=quadrado>
+				<% if(casas[5] != 0) { %>
+					<label><%=casas[5]%></label>
+				<% } else { %>
+					<form name="" action="" method="POST">
+						<input type="hidden" name="posicao" value="5"/>
+						<%
+						for(var i in casas){
+							  var c = casas[i];%>
+							  <input type="hidden" name="casas" value="<%=c%>">
+							<%}%>
+							<% var cont = parseInt(contador) + 1;%>
+						<input type="hidden" name="contador" value="<%=cont%>" />
+						<input type="submit" value="Jogar" />
+					</form>
+				<% } %>
+			</div></td>
+		</tr>
+		<tr>		
+			<td><div id=quadrado>
+				<% if(casas[6] != 0) { %>
+					<label><%=casas[6]%></label>
+				<% } else { %>
+					<form name="" action="" method="POST">
+						<input type="hidden" name="posicao" value="6"/>
+						<%
+						for(var i in casas){
+							  var c = casas[i];%>
+							  <input type="hidden" name="casas" value="<%=c%>">
+							<%}%>
+							<% var cont = parseInt(contador) + 1;%>
+						<input type="hidden" name="contador" value="<%=cont%>" />
+						<input type="submit" value="Jogar" />
+					</form>
+				<% } %>
+			</div></td>
+			<td><div id=quadrado>
+				<% if(casas[7] != 0) { %>
+					<label><%=casas[7]%></label>
+				<% } else { %>
+					<form name="" action="" method="POST">
+						<input type="hidden" name="posicao" value="7"/>
+						<%
+						for(var i in casas){
+							  var c = casas[i];%>
+							  <input type="hidden" name="casas" value="<%=c%>">
+							<%}%>
+							<% var cont = parseInt(contador) + 1;%>
+						<input type="hidden" name="contador" value="<%=cont%>" />
+						<input type="submit" value="Jogar" />
+					</form>
+				<% } %>
+			</div></td>
+			<td><div id=quadrado>
+				<% if(casas[8] != 0) { %>
+					<label><%=casas[8]%></label>
+				<% } else { %>
+					<form name="" action="" method="POST">
+						<input type="hidden" name="posicao" value="8"/>
+						<%
+						for(var i in casas){
+							  var c = casas[i];%>
+							  <input type="hidden" name="casas" value="<%=c%>">
+							<%}%>
+							<% var cont = parseInt(contador) + 1;%>
+						<input type="hidden" name="contador" value="<%=cont%>" />
+						<input type="submit" value="Jogar" />
+					</form>
+				<% } %>
+			</div></td>
+		</tr>
+	</table>
+	  <a href="/index.html">HOME</a>
+	  </center>
+  </body>
+</html>
