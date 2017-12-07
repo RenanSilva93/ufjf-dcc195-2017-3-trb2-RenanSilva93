@@ -69,7 +69,7 @@ module.exports.campeonato = function(req,res,next){
 		}
 		
 		var c=0
-		for(var c=0;i<16;i=i+2){
+		for(var i=0;i<16;i=i+2){
 		  timesOitavasAntigo[c]={ 'timeMandante': timesOitavas[i],'timeVisitante': timesOitavas[i+1]}
 		  c++;
 		}
@@ -109,7 +109,7 @@ module.exports.campeonato = function(req,res,next){
 		}
 		
 		var c=0
-		for(var c=0;i<16;i=i+2){
+		for(var i=0;i<16;i=i+2){
 		  timesOitavasAntigo[c]={ 'timeMandante': timesOitavas[i],'timeVisitante': timesOitavas[i+1]}
 		  c++;
 		}
@@ -149,7 +149,7 @@ module.exports.campeonato = function(req,res,next){
 		times[0]={ 'campeao': timeGanhador[0]}
 		
 		var c=0
-		for(var c=0;i<16;i=i+2){
+		for(var i=0;i<16;i=i+2){
 		  timesOitavasAntigo[c]={ 'timeMandante': timesOitavas[i],'timeVisitante': timesOitavas[i+1]}
 		  c++;
 		}
